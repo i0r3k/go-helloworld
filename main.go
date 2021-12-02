@@ -32,6 +32,6 @@ func setupRouter() *gin.Engine {
 
 func main() {
     r := setupRouter()
-    // Listen and Server in 0.0.0.0:18080
-    r.Run(":18080")
+    // Listen and Server in 0.0.0.0:19090
+    r.Run(":19090")
 }

@@ -1,0 +1,7 @@
+pipy()
+.listen(9090)
+  .demuxHTTP('forward')
+.pipeline('forward')
+  .muxHTTP('connection', '')
+.pipeline('connection')
+  .connect(() => '127.0.0.1:19090')
